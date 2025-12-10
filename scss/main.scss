@@ -94,3 +94,11 @@ p{
 .form-label{
     color: $primary;
 }
+
+.allreservations{
+    a{
+         display: block;
+        color: $bg-dark;
+        padding: 10px;
+    }   
+}
