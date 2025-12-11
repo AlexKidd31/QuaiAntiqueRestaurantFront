@@ -5,12 +5,13 @@ export const allRoutes = [
     new Route("/", "Accueil", "/pages/home.html"),
     new Route("/galerie", "La galerie", "/pages/galerie.html"),
     new Route("/signin", "Connexion", "/pages/auth/signin.html"),
-    new Route("/signup", "Inscription", "/pages/auth/signup.html"),
+    new Route("/signup", "Inscription", "/pages/auth/signup.html", "/js/auth/signup.js"),    
     new Route("/account", "Mon compte", "/pages/auth/account.html"),
     new Route("/editpassword", "Changement de mot de passe", "/pages/auth/editpassword.html"),
     new Route("/allResa", "Vos réservation", "/pages/reservations/allResa.html"),
     new Route("/reserver", "Réserver", "/pages/reservations/reserver.html"),
     new Route("/menu", "La carte", "/pages/menu.html"),
+    
 ];
 
 
