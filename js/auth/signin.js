@@ -1,0 +1,25 @@
+
+const mailInput = document.getElementById("EmailInput");
+const passwordInput = document.getElementById("PasswordInput");
+const btnSingin = document.getElementById("btnSignin");
+
+btnSingin.addEventListener("click", checkCredentials);
+
+function checkCredentials(){
+    //Ici, il faudra appeler l'API
+
+    if(mailInput.value == "test@mail.com" && passwordInput.value == "123"){
+
+        // Il faudra recuperer le vrai token
+        const token = "dqksflhqslkjfhqlskfhqlksdhfqkshfqlksdf";
+        setToken(token);
+        //Placer ce token en cookie
+
+        setCookie(RoleCookieName, "client", 7);
+        window.location.replace("/");
+    }
+    else{
+        mailInput.classList.add(is-invalid);
+        passwordInput.classList.add(is-invalid);
+    }
+}
