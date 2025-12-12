@@ -6,6 +6,7 @@ const inputPrenom = document.getElementById("PrenomInput");
 const inputMail = document.getElementById("EmailInput");
 const inputPassword = document.getElementById("PasswordInput");
 const inputValidationPassword = document.getElementById("ValidatePasswordInput");
+const btnValidation = document.getElementById('btnValidation');
 
 inputNom.addEventListener("keyup", validateForm); 
 inputPrenom.addEventListener("keyup", validateForm);
@@ -21,7 +22,7 @@ function validateForm() {
     const passwordOk = validatePassword(inputPassword);
     const passwordConfirmOk = validatePasswordMatch(inputPassword, inputValidationPassword);
 
-    if(nomOk && prenomOk && mailOk && passwordOk){
+    if(nomOk && prenomOk && mailOk && passwordOk && passwordConfirmOk){
         btnValidation.disabled = false;
     }
     else{
